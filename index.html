@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Técnicas de Investigación Social II · Guía interactiva</title>
+<meta name="description" content="Guía interactiva de las técnicas cualitativas de la asignatura Técnicas de Investigación Social II. Máster en Intervención Social, UNIR. Prof. Javier Cantón.">
+<meta name="author" content="Javier Cantón">
+<meta property="og:title" content="Técnicas de Investigación Social II · Guía interactiva">
+<meta property="og:description" content="Los siete temas de la asignatura, explicados con ejemplos y ejercicios para practicar.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/estilos.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2314343b'/><rect x='6' y='13' width='20' height='7' fill='%23f5ce5b'/></svg>">
+</head>
+<body>
+
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="cabecera__marca">
+    <span class="cabecera__asig">Técnicas de Investigación Social II</span>
+    <span class="cabecera__meta">Máster en Intervención Social · Prof. Javier Cantón</span>
+  </div>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navPrincipal">
+    <span class="menu-btn__barras" aria-hidden="true"></span>
+    Temas
+  </button>
+  <nav class="nav" id="navPrincipal" aria-label="Secciones de la guía">
+    <a href="#asignatura">La asignatura</a>
+    <a href="#elegir">Elegir técnica</a>
+    <a href="#temas">Los 7 temas</a>
+    <a href="#laboratorio">Laboratorio</a>
+    <a href="#autoevaluacion">Autoevaluación</a>
+    <a href="#glosario">Glosario</a>
+  </nav>
+</header>
+
+<main id="contenido">
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero">
+  <div class="hero__transcripcion">
+    <div class="transcripcion" id="heroTranscripcion">
+      <p class="transcripcion__cab">Entrevista 04 · participante, 24 años · minuto 11:20</p>
+      <p class="transcripcion__linea">
+        <span class="hab">P:</span> Yo venía al principio, sí. Pero
+        <span class="marca marca--ambar" data-marca="1">me salió faena en la obra y me cambian el turno cada semana</span>,
+        y si un jueves no apareces
+        <span class="marca marca--ambar" data-marca="2">te dan otra cita para dentro de un mes</span>.
+        Y cada vez que vengo
+        <span class="marca marca--rosa" data-marca="3">hay que contarlo todo otra vez desde el principio</span>,
+        lo de mi madre, lo del piso. Eso cansa. Con los de aquí sí hablo,
+        <span class="marca marca--verde" data-marca="4">entre nosotros nos vamos avisando de dónde hay algo</span>.
+      </p>
+      <ul class="codigos" id="heroCodigos">
+        <li class="codigo codigo--ambar" data-marca="1">Normas y turnos</li>
+        <li class="codigo codigo--ambar" data-marca="2">Barrera administrativa</li>
+        <li class="codigo codigo--rosa" data-marca="3">Repetir el relato</li>
+        <li class="codigo codigo--verde" data-marca="4">Apoyo mutuo</li>
+      </ul>
+    </div>
+    <button class="repetir" id="repetirHero" type="button">Ver la codificación otra vez</button>
+  </div>
+
+  <div class="hero__texto">
+    <h1>Esto es todo lo que vamos a hacer este cuatrimestre.</h1>
+    <p class="hero__entradilla">
+      Alguien habla. Alguien escucha y lo registra. Y después, alguien decide qué partes
+      de lo dicho significan lo mismo y les pone un nombre. Las técnicas cualitativas son
+      las maneras rigurosas de hacer esas tres cosas.
+    </p>
+    <p>
+      Esta guía acompaña a las clases: siete temas, un caso que recorre todos ellos y
+      ejercicios para que pruebes tú. No sustituye a los materiales del campus, los
+      ordena y los pone a funcionar.
+    </p>
+    <div class="hero__acciones">
+      <a class="boton" href="#temas">Empezar por el Tema 1</a>
+      <a class="boton boton--secundario" href="#elegir">No sé qué técnica necesito</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ EL CASO ═══════════════ -->
+<section class="banda" id="caso">
+  <div class="banda__interior">
+    <h2>El caso que usaremos todo el cuatrimestre</h2>
+    <div class="caso">
+      <div class="caso__texto">
+        <p>
+          <strong>Espacio Puente</strong> es un programa municipal de un barrio con alta
+          concentración de paro de larga duración, empleo precario y población migrante
+          reciente. Atiende a jóvenes de 18 a 30 años en situación de pobreza o exclusión:
+          orientación laboral, acompañamiento para trámites, apoyo al acceso a prestaciones,
+          talleres y derivación a recursos de salud mental y vivienda.
+        </p>
+        <p>
+          El año pasado entraron 87 personas al programa. 48 dejaron de acudir con
+          regularidad en los tres primeros meses y solo 23 completaron el itinerario previsto.
+          El equipo lo interpreta como falta de motivación. Algunos participantes, en cambio,
+          dicen que se sienten juzgados, que los horarios del centro no encajan con sus turnos
+          y que les agota repetir su historia una y otra vez.
+        </p>
+        <p class="caso__cierre">
+          Cada técnica de la asignatura mira este mismo problema desde un sitio distinto.
+          Ahí está la gracia.
+        </p>
+      </div>
+      <dl class="cifras">
+        <div><dt>87</dt><dd>personas incorporadas</dd></div>
+        <div><dt>48</dt><dd>dejaron de acudir en 3 meses</dd></div>
+        <div><dt>23</dt><dd>completaron el itinerario</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ LA ASIGNATURA ═══════════════ -->
+<section class="seccion" id="asignatura">
+  <div class="seccion__rail">
+    <p class="rail__num">00</p>
+    <p class="rail__nota">Del 7 de septiembre al 6 de noviembre</p>
+  </div>
+  <div class="seccion__cuerpo">
+    <h2>Cómo funciona la asignatura</h2>
+    <p class="intro">
+      Nueve semanas, siete temas y dos actividades entregables. El orden de las clases no
+      sigue la numeración de la guía docente: empezamos por el marco, seguimos por el diseño
+      y el análisis, y solo después vemos las técnicas de recogida una a una. Se aprende
+      mejor así, aunque obligue a mirar dos veces el calendario.
+    </p>
+
+    <div class="calendario" id="calendario">
+      <ol class="semanas">
+        <li class="semana"><span class="semana__fecha">7–11 sept</span><a class="semana__tema" href="#tema-1">Tema 1 · Singularidades del objeto de las ciencias sociales</a><span class="semana__guia">Guía docente: tema 1</span></li>
+        <li class="semana"><span class="semana__fecha">14–18 sept</span><a class="semana__tema" href="#tema-2">Tema 2 · Diseño de estudios cualitativos</a><span class="semana__guia">Guía docente: tema 7</span></li>
+        <li class="semana"><span class="semana__fecha">21–25 sept</span><a class="semana__tema" href="#tema-3">Tema 3 · Análisis de datos cualitativos</a><span class="semana__guia">Guía docente: tema 6</span></li>
+        <li class="semana"><span class="semana__fecha">28 sept–2 oct</span><a class="semana__tema" href="#tema-4">Tema 4 · Observación participante</a><span class="semana__guia">Guía docente: tema 2</span></li>
+        <li class="semana"><span class="semana__fecha">5–9 oct</span><a class="semana__tema" href="#tema-5">Tema 5 · Entrevistas abiertas o en profundidad</a><span class="semana__guia">Guía docente: tema 3</span></li>
+        <li class="semana"><span class="semana__fecha">12–16 oct</span><a class="semana__tema" href="#tema-6">Tema 6 · Historias de vida</a><span class="semana__guia">Guía docente: tema 4</span></li>
+        <li class="semana"><span class="semana__fecha">19–23 oct</span><a class="semana__tema" href="#tema-7">Tema 7 · Grupos de discusión</a><span class="semana__guia">Guía docente: tema 5</span></li>
+        <li class="semana semana--gris"><span class="semana__fecha">26–30 oct</span><span class="semana__tema">Repaso</span></li>
+        <li class="semana semana--gris"><span class="semana__fecha">2–6 nov</span><span class="semana__tema">Exámenes</span></li>
+      </ol>
+    </div>
+
+    <h3>Las dos actividades</h3>
+    <div class="actividades">
+      <article class="actividad">
+        <p class="actividad__tipo">Individual · 5,5 puntos</p>
+        <h4>Proyecto de investigación cualitativa con uso crítico de IA</h4>
+        <p>
+          Una propuesta completa de proyecto: fundamentación teórica, diseño metodológico y
+          planificación del análisis. Además, una reflexión sobre los beneficios, los riesgos
+          y los límites de usar inteligencia artificial en la investigación.
+        </p>
+        <p class="actividad__fecha">Semanas 3 a 5 · entrega el lunes 5 de octubre</p>
+        <p class="actividad__pista">Se apoya sobre todo en los temas 1, 2 y 3.</p>
+      </article>
+      <article class="actividad">
+        <p class="actividad__tipo">Grupal</p>
+        <h4>Codificación de una entrevista con apoyo de IA</h4>
+        <p>
+          Identificar categorías, contrastar interpretaciones entre vosotros y valorar
+          críticamente qué aporta y qué distorsiona la IA en el análisis. La entrevista es la
+          misma para todos los grupos y la facilita el profesorado: no se admiten otros materiales.
+        </p>
+        <p class="actividad__fecha">Semanas 5 a 7 · entrega el lunes 19 de octubre</p>
+        <p class="actividad__pista">Practica antes en el <a href="#laboratorio">laboratorio de codificación</a>.</p>
+      </article>
+    </div>
+
+    <div class="aviso">
+      <h4>Tres cosas que conviene tener claras desde el principio</h4>
+      <ul>
+        <li><strong>Citar es parte del método.</strong> El plagio no es un problema de forma, es un problema de honestidad con los datos y con quien te lee.</li>
+        <li><strong>El examen no pide memoria.</strong> Hay preguntas de desarrollo, razonamiento, análisis, casos prácticos y de relación entre temas. Si entiendes por qué se elige una técnica, apruebas.</li>
+        <li><strong>Usa la biblioteca.</strong> Buscar bien un artículo es una competencia de la asignatura, no un trámite previo.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ELEGIR TÉCNICA ═══════════════ -->
+<section class="seccion seccion--alt" id="elegir">
+  <div class="seccion__rail">
+    <p class="rail__num">↔</p>
+    <p class="rail__nota">Tres preguntas, una recomendación</p>
+  </div>
+  <div class="seccion__cuerpo">
+    <h2>¿Qué técnica necesito?</h2>
+    <p class="intro">
+      La pregunta correcta nunca es «¿qué técnica me gusta más?», sino «¿qué tipo de
+      material necesito tener delante para responder a lo que quiero saber?». Responde y
+      te digo por dónde empezaría yo, y qué te vas a encontrar.
+    </p>
+
+    <form class="selector" id="selector">
+      <fieldset class="pregunta">
+        <legend>1. ¿Qué quieres saber exactamente?</legend>
+        <label><input type="radio" name="q1" value="practicas"> Qué hace la gente realmente en un sitio, más allá de lo que dice que hace</label>
+        <label><input type="radio" name="q1" value="experiencia"> Cómo vive y explica una persona su propia experiencia</label>
+        <label><input type="radio" name="q1" value="colectivo"> Cómo se forma y se defiende una opinión cuando hay más gente delante</label>
+        <label><input type="radio" name="q1" value="trayectoria"> Cómo una trayectoria vital ha llegado hasta el punto en el que está</label>
+        <label><input type="radio" name="q1" value="documentos"> Qué dicen unos documentos, unas actas o unos materiales ya existentes</label>
+      </fieldset>
+
+      <fieldset class="pregunta">
+        <legend>2. ¿De cuánto tiempo dispones en el campo?</legend>
+        <label><input type="radio" name="q2" value="corto"> Unas semanas</label>
+        <label><input type="radio" name="q2" value="medio"> Dos o tres meses</label>
+        <label><input type="radio" name="q2" value="largo"> Medio curso o más</label>
+      </fieldset>
+
+      <fieldset class="pregunta">
+        <legend>3. ¿Qué acceso tienes?</legend>
+        <label><input type="radio" name="q3" value="dentro"> Trabajo o participo en ese espacio</label>
+        <label><input type="radio" name="q3" value="visitante"> Puedo entrar, pero como alguien de fuera</label>
+        <label><input type="radio" name="q3" value="personas"> Solo puedo contactar con personas, no con el espacio</label>
+      </fieldset>
+
+      <button class="boton" type="submit">Ver recomendación</button>
+    </form>
+
+    <div class="resultado" id="resultado" hidden aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ═══════════════ LOS 7 TEMAS ═══════════════ -->
+<section class="seccion" id="temas">
+  <div class="seccion__rail">
+    <p class="rail__num">1–7</p>
+    <p class="rail__nota">Abre el que estés dando esta semana</p>
+  </div>
+  <div class="seccion__cuerpo">
+    <h2>Los siete temas</h2>
+    <p class="intro">
+      Cada tema tiene la idea central en una frase, los conceptos que van a caer, cómo se
+      aplicaría al caso de Espacio Puente y el error que más se repite en los trabajos.
+    </p>
+    <p class="controles-temas">
+      <button class="mini-boton" id="abrirTodos" type="button">Abrir todos</button>
+      <button class="mini-boton" id="cerrarTodos" type="button">Cerrar todos</button>
+    </p>
+
+    <div class="temas" id="listaTemas"><!-- inyectado por JS --></div>
+  </div>
+</section>
+
+<!-- ═══════════════ LABORATORIO ═══════════════ -->
+<section class="seccion seccion--oscura" id="laboratorio">
+  <div class="seccion__rail">
+    <p class="rail__num">03</p>
+    <p class="rail__nota">Práctica del Tema 3</p>
+  </div>
+  <div class="seccion__cuerpo">
+    <h2>Laboratorio de codificación</h2>
+    <p class="intro">
+      Codificar es decidir que dos trozos de texto hablan de lo mismo y darle un nombre a ese
+      «lo mismo». Se aprende haciéndolo y equivocándose. Elige un código, pincha en las frases
+      donde creas que aparece y luego compara con una propuesta razonada.
+    </p>
+
+    <div class="lab">
+      <div class="lab__codigos">
+        <p class="lab__titulo">1. Elige un código</p>
+        <div class="paleta" id="paleta" role="group" aria-label="Códigos disponibles">
+          <button class="chip chip--ambar" type="button" data-cod="normas">Normas y condiciones de vida</button>
+          <button class="chip chip--rosa" type="button" data-cod="juicio">Reconocimiento y juicio</button>
+          <button class="chip chip--verde" type="button" data-cod="apoyo">Apoyo mutuo</button>
+          <button class="chip chip--violeta" type="button" data-cod="sentido">Sentido del acompañamiento</button>
+        </div>
+        <p class="lab__ayuda" id="labAyuda">Ningún código seleccionado. Pincha en uno para empezar.</p>
+      </div>
+
+      <div class="lab__texto">
+        <p class="lab__titulo">2. Pincha en las frases</p>
+        <p class="lab__fuente">Entrevista 04 · participante de Espacio Puente, 24 años</p>
+        <div class="fragmento" id="fragmento"><!-- inyectado por JS --></div>
+      </div>
+    </div>
+
+    <div class="lab__acciones">
+      <button class="boton" id="compararLab" type="button">Comparar con una propuesta</button>
+      <button class="boton boton--secundario" id="reiniciarLab" type="button">Empezar de nuevo</button>
+    </div>
+
+    <div class="lab__resultado" id="labResultado" hidden aria-live="polite"></div>
+
+    <div class="atlas">
+      <div class="atlas__texto">
+        <h3>Y ahora, con el software delante</h3>
+        <p>
+          Lo que acabas de hacer a mano es exactamente lo que hace un CAQDAS, solo que con
+          cientos de páginas y sin perder ni una cita. Para la actividad grupal vas a necesitar
+          ATLAS.ti, y tienes una introducción completa preparada para esta asignatura.
+        </p>
+        <p class="atlas__vise">
+          Está montada sobre el principio <strong>VISE</strong> de ATLAS.ti:
+          <span>Visualización</span> de patrones y relaciones,
+          <span>Inmersión</span> permanente en los datos originales,
+          <span>Serendipia</span> para que aparezca lo que no buscabas y
+          <span>Exploración</span> sistemática para construir significado.
+        </p>
+        <a class="boton boton--atlas" href="https://javicanton.github.io/curso-atlas-ti" target="_blank" rel="noopener">
+          Introducción al análisis cualitativo con ATLAS.ti
+        </a>
+        <p class="atlas__nota">Se abre en una pestaña nueva · javicanton.github.io/curso-atlas-ti</p>
+      </div>
+      <ul class="atlas__lista">
+        <li>Herramientas de búsqueda de contenido</li>
+        <li>Herramientas de codificación</li>
+        <li>Herramientas de enlazado</li>
+        <li>Mapas y redes</li>
+        <li>Consultas</li>
+        <li>Escritura y anotación</li>
+      </ul>
+    </div>
+
+    <div class="aviso aviso--oscuro">
+      <h4>Una lista de códigos bien construida</h4>
+      <ul>
+        <li>Cada código significa una cosa distinta de todas las demás, y ese significado está escrito en su comentario.</li>
+        <li>Entre 10 y 25 categorías de primer nivel, y no más de dos o tres niveles de profundidad.</li>
+        <li>Es a-teórica: describe los datos, no representa todavía tu modelo ni tu teoría.</li>
+        <li>Si un pasaje tiene varias capas de significado, mejor dos códigos y codificarlo dos veces que un código ambiguo.</li>
+        <li>Los códigos sueltos que no encajan en ninguna categoría no se tiran: van a una carpeta propia.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ AUTOEVALUACIÓN ═══════════════ -->
+<section class="seccion" id="autoevaluacion">
+  <div class="seccion__rail">
+    <p class="rail__num">✓</p>
+    <p class="rail__nota">Ocho preguntas, sin nota</p>
+  </div>
+  <div class="seccion__cuerpo">
+    <h2>Autoevaluación</h2>
+    <p class="intro">
+      Ninguna de estas preguntas se guarda ni se envía a ningún sitio. Están escritas con la
+      lógica del examen: no se trata de recordar un dato, sino de decidir bien.
+    </p>
+    <div class="test" id="test"><!-- inyectado por JS --></div>
+    <div class="test__marcador" id="marcador" aria-live="polite"></div>
+    <button class="boton boton--secundario" id="reiniciarTest" type="button">Volver a empezar</button>
+  </div>
+</section>
+
+<!-- ═══════════════ GLOSARIO ═══════════════ -->
+<section class="seccion seccion--alt" id="glosario">
+  <div class="seccion__rail">
+    <p class="rail__num">A–Z</p>
+    <p class="rail__nota">Escribe para filtrar</p>
+  </div>
+  <div class="seccion__cuerpo">
+    <h2>Glosario</h2>
+    <p class="intro">
+      Los términos que más se confunden en los trabajos. Si una palabra te suena pero no
+      sabrías explicarla en voz alta, búscala aquí.
+    </p>
+    <label class="buscador">
+      <span class="buscador__etiqueta">Buscar un término</span>
+      <input type="search" id="buscadorGlosario" placeholder="triangulación, rapport, saturación…" autocomplete="off">
+    </label>
+    <dl class="glosario" id="listaGlosario"><!-- inyectado por JS --></dl>
+    <p class="glosario__vacio" id="glosarioVacio" hidden>No hay ningún término con esas letras. Prueba con una palabra más corta.</p>
+  </div>
+</section>
+
+<!-- ═══════════════ RECURSOS ═══════════════ -->
+<section class="seccion" id="recursos">
+  <div class="seccion__rail">
+    <p class="rail__num">→</p>
+    <p class="rail__nota">Enlaces del temario</p>
+  </div>
+  <div class="seccion__cuerpo">
+    <h2>Recursos</h2>
+    <ul class="recursos">
+      <li>
+        <a href="https://javicanton.github.io/curso-atlas-ti" target="_blank" rel="noopener">Introducción al análisis cualitativo con ATLAS.ti</a>
+        <span>El curso propio de la asignatura. Imprescindible para la actividad grupal.</span>
+      </li>
+      <li>
+        <a href="https://biblioteca.unir.net/Biblioteca/Portada" target="_blank" rel="noopener">Biblioteca virtual UNIR</a>
+        <span>Punto de partida para las referencias de los trabajos.</span>
+      </li>
+      <li>
+        <a href="https://doi.org/10.5477/cis/reis.29.7" target="_blank" rel="noopener">Artículo de la REIS sobre los métodos de las ciencias sociales</a>
+        <span>Base del Tema 1: por qué hay pluralismo metodológico y no un método único.</span>
+      </li>
+      <li>
+        <a href="https://prezi.com/p6iq6ouup7ls/cinco-vias-de-acceso-a-la-realidad-social/" target="_blank" rel="noopener">Cinco vías de acceso a la realidad social</a>
+        <span>El esquema visual de los cinco métodos que vemos en el Tema 1.</span>
+      </li>
+      <li>
+        <a href="http://hdl.handle.net/10230/55477" target="_blank" rel="noopener">Inteligencia artificial y CAQDAS</a>
+        <span>Lectura de apoyo para la parte de IA de las dos actividades.</span>
+      </li>
+      <li>
+        <a href="https://miro.com/app/board/uXjVMnncLIg=/?share_link_id=764658223686" target="_blank" rel="noopener">Tablero de Miro del Tema 1</a>
+        <span>«¿Qué necesitamos para investigar?». Se trabaja en clase.</span>
+      </li>
+      <li>
+        <a href="https://javiercanton.com/" target="_blank" rel="noopener">javiercanton.com</a>
+        <span>Web del profesor de la asignatura.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="pie__interior">
+    <p class="pie__asig">Técnicas de Investigación Social II</p>
+    <p>Máster en Intervención Social · UNIR · Prof. Javier Cantón</p>
+    <p class="pie__nota">
+      Guía de apoyo a las clases. Los materiales oficiales, las fechas definitivas y los
+      criterios de evaluación son siempre los del campus virtual.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/contenidos.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
