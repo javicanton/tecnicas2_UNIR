@@ -43,8 +43,8 @@ assets/js/app.js            Lógica de los interactivos
 Casi todo lo que querrás cambiar está en **`assets/js/contenidos.js`**, separado de la
 lógica a propósito. No hace falta tocar `app.js`.
 
-- **`TEMAS`** — los siete temas. Cada uno tiene `num` (orden de clase), `guia` (su número
-  en la guía docente), `semana`, `titulo`, `idea` (la frase que resume el tema), `bloques`
+- **`TEMAS`** — los siete temas. Cada uno tiene `num`, `eje` (`Introducción`, `Proyecto`,
+  `Análisis` o `Técnica`), `titulo`, `idea` (la frase que resume el tema), `bloques`
   (cada uno con encabezado `h`, párrafo `p` y una `lista` que puede ir vacía), `caso`
   (aplicación a Espacio Puente), `error` (el fallo típico), `frase` (la cita destacada) y,
   opcionalmente, `enlaceAtlas: true`.
@@ -59,14 +59,19 @@ lógica a propósito. No hace falta tocar `app.js`.
 Se puede escribir HTML dentro de los textos (`<strong>`, `<em>`, `<a>`), lo que es cómodo
 para destacar conceptos o añadir enlaces.
 
-Las fechas del calendario y la información de las dos actividades están en `index.html`,
-en las secciones `#asignatura`.
+La información de las dos actividades está en `index.html`, en la sección `#asignatura`.
 
 ## Numeración de los temas
 
-El sitio usa el **orden de las clases** (1 a 7, el mismo de las diapositivas), no el de la
-guía docente. Cada tema indica al final su número en la guía, y el calendario lo muestra
-también en cada semana, para que nadie se pierda al buscar los materiales en el campus.
+La numeración es la misma en clases, guía y este sitio:
+
+1. Introducción · Singularidades del objeto de las ciencias sociales
+2. Proyecto · Diseño de estudios cualitativos
+3. Análisis · Análisis de datos cualitativos
+4. Técnica · Observación participante
+5. Técnica · Entrevistas abiertas o en profundidad
+6. Técnica · Historias de vida
+7. Técnica · Grupos de discusión
 
 ## Accesibilidad y privacidad
 

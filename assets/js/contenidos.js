@@ -6,8 +6,7 @@
 const TEMAS = [
   {
     num: 1,
-    guia: 1,
-    semana: '7–11 sept',
+    eje: 'Introducción',
     titulo: 'Singularidades del objeto de las ciencias sociales',
     idea: 'La sociedad no se deja estudiar como una piedra: el investigador está dentro de aquello que investiga, y eso obliga a tener más de un método.',
     bloques: [
@@ -50,8 +49,7 @@ const TEMAS = [
 
   {
     num: 2,
-    guia: 7,
-    semana: '14–18 sept',
+    eje: 'Proyecto',
     titulo: 'Diseño de estudios cualitativos',
     idea: 'El diseño cualitativo es circular: recoges, analizas, y lo que descubres te obliga a volver al campo con otras preguntas.',
     bloques: [
@@ -101,8 +99,7 @@ const TEMAS = [
 
   {
     num: 3,
-    guia: 6,
-    semana: '21–25 sept',
+    eje: 'Análisis',
     titulo: 'Análisis de datos cualitativos',
     idea: 'Analizar son dos tareas a la vez: una administrativa, que consiste en ordenar y poder recuperar, y otra interpretativa, que consiste en volver a narrar.',
     bloques: [
@@ -158,8 +155,7 @@ const TEMAS = [
 
   {
     num: 4,
-    guia: 2,
-    semana: '28 sept–2 oct',
+    eje: 'Técnica',
     titulo: 'Observación participante',
     idea: 'Etnografía significa literalmente descripción de un pueblo: se ocupa de las personas en sentido colectivo, no de individuos.',
     bloques: [
@@ -209,8 +205,7 @@ const TEMAS = [
 
   {
     num: 5,
-    guia: 3,
-    semana: '5–9 oct',
+    eje: 'Técnica',
     titulo: 'Entrevistas abiertas o en profundidad',
     idea: 'Entre-vista: una visión entre dos. El conocimiento no se recoge, se produce en la interacción.',
     bloques: [
@@ -253,8 +248,7 @@ const TEMAS = [
 
   {
     num: 6,
-    guia: 4,
-    semana: '12–16 oct',
+    eje: 'Técnica',
     titulo: 'Historias de vida',
     idea: 'Es una entrevista en profundidad, pero girada noventa grados: donde la entrevista es sincrónica, la historia de vida es diacrónica.',
     bloques: [
@@ -302,8 +296,7 @@ const TEMAS = [
 
   {
     num: 7,
-    guia: 5,
-    semana: '19–23 oct',
+    eje: 'Técnica',
     titulo: 'Grupos de discusión',
     idea: 'No es una entrevista en grupo ni un debate: lo que se produce y se analiza es la interacción entre los participantes.',
     bloques: [

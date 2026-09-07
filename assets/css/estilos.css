@@ -47,7 +47,7 @@ body {
 }
 
 h1, h2, h3, h4, legend, .boton, .mini-boton, .chip, .nav, .cabecera, .rail__num, .rail__nota,
-.semana__fecha, .semana__guia, .actividad__tipo, .codigo, .pastilla, .seg__etiqueta, .opcion {
+.item-temario__eje, .tema__eje, .actividad__tipo, .codigo, .pastilla, .seg__etiqueta, .opcion {
   font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
@@ -244,22 +244,19 @@ a:hover { color: var(--tinta); }
 .intro { font-size: 1.1rem; color: var(--tinta-2); }
 .seccion--oscura .intro { color: #B9D0D3; }
 
-/* =========================== CALENDARIO =========================== */
+/* =========================== TEMARIO =========================== */
 
-.semanas { list-style: none; margin: 1.5rem 0 2.5rem; padding: 0; max-width: none; border-top: 1px solid var(--linea); }
-.semana {
-  display: grid; grid-template-columns: 8.5rem minmax(0, 1fr) auto;
+.temario { list-style: none; margin: 1.5rem 0 2.5rem; padding: 0; max-width: none; border-top: 1px solid var(--linea); }
+.item-temario {
+  display: grid; grid-template-columns: 8.5rem minmax(0, 1fr);
   gap: 1rem; align-items: baseline;
   padding: .75rem 0; border-bottom: 1px solid var(--linea);
 }
-@media (max-width: 700px) { .semana { grid-template-columns: 1fr; gap: .15rem; } }
-.semana__fecha { font-size: .8rem; font-weight: 600; color: var(--tinta-2); }
-.semana__tema { font-size: 1.02rem; }
-a.semana__tema { color: var(--tinta); text-decoration: none; border-bottom: 1.5px solid var(--ambar); }
-a.semana__tema:hover { border-bottom-color: var(--tinta); }
-.semana__guia { font-size: .72rem; color: var(--tinta-3); }
-.semana--gris { color: var(--tinta-3); }
-.semana--gris .semana__tema { font-style: italic; }
+@media (max-width: 700px) { .item-temario { grid-template-columns: 1fr; gap: .15rem; } }
+.item-temario__eje { font-size: .8rem; font-weight: 600; color: var(--tinta-2); }
+.item-temario__tema { font-size: 1.02rem; }
+a.item-temario__tema { color: var(--tinta); text-decoration: none; border-bottom: 1.5px solid var(--ambar); }
+a.item-temario__tema:hover { border-bottom-color: var(--tinta); }
 
 /* =========================== ACTIVIDADES ========================== */
 
@@ -268,8 +265,7 @@ a.semana__tema:hover { border-bottom-color: var(--tinta); }
 .actividad p { max-width: none; }
 .actividad__tipo { font-size: .74rem; font-weight: 600; color: var(--acento); margin-bottom: .4rem; }
 .actividad h4 { font-size: 1.12rem; font-weight: 700; }
-.actividad__fecha { font-size: .88rem; font-weight: 500; border-top: 1px dashed var(--linea); padding-top: .7rem; margin-bottom: .3rem; }
-.actividad__pista { font-size: .85rem; color: var(--tinta-2); margin: 0; }
+.actividad__pista { font-size: .85rem; color: var(--tinta-2); margin: 0; border-top: 1px dashed var(--linea); padding-top: .7rem; }
 
 .aviso { background: var(--blanco); border: 1px solid var(--linea); border-left: 5px solid var(--ambar); padding: 1.3rem 1.5rem; }
 .aviso h4 { margin-bottom: .7rem; }
@@ -324,10 +320,10 @@ a.semana__tema:hover { border-bottom-color: var(--tinta); }
 .tema__titular { display: block; }
 .tema__titulo { display: block; font-family: 'Archivo', sans-serif; font-weight: 600; font-size: 1.12rem; letter-spacing: -.01em; }
 .tema__idea { display: block; font-family: 'Newsreader', serif; font-size: .95rem; color: var(--tinta-2); margin-top: .2rem; }
-.tema__semana { font-size: .76rem; color: var(--tinta-3); white-space: nowrap; }
+.tema__eje { font-size: .76rem; font-weight: 600; color: var(--tinta-3); white-space: nowrap; letter-spacing: .02em; }
 @media (max-width: 700px) {
   .tema__cabecera { grid-template-columns: 2.4rem minmax(0, 1fr) 1.2rem; }
-  .tema__semana { display: none; }
+  .tema__eje { display: none; }
 }
 .tema__flecha {
   width: 11px; height: 11px; border-right: 2px solid var(--tinta-2); border-bottom: 2px solid var(--tinta-2);
@@ -355,7 +351,6 @@ a.semana__tema:hover { border-bottom-color: var(--tinta); }
   font-style: italic; font-size: 1.08rem; color: var(--tinta-2); max-width: var(--lectura);
 }
 .tema__atlas { font-size: .95rem; }
-.tema__guia { font-size: .78rem; color: var(--tinta-3); border-top: 1px dashed var(--linea); padding-top: .8rem; margin: 1.5rem 0 0; }
 
 /* =========================== LABORATORIO ========================== */
 

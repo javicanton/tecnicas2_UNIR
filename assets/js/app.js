@@ -78,7 +78,7 @@
           <span class="tema__titulo">${t.titulo}</span>
           <span class="tema__idea">${t.idea}</span>
         </span>
-        <span class="tema__semana">${t.semana}</span>
+        <span class="tema__eje">${t.eje}</span>
         <span class="tema__flecha" aria-hidden="true"></span>
       </button>
       <div class="tema__panel" id="panel-${t.num}" hidden>
@@ -94,7 +94,6 @@
           </div>
           <blockquote class="tema__frase">${t.frase}</blockquote>
           ${atlas}
-          <p class="tema__guia">Este tema aparece como <strong>tema ${t.guia}</strong> en la guía docente.</p>
         </div>
       </div>
     </article>`;
